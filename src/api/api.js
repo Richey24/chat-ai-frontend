@@ -1,7 +1,7 @@
 import axios from "axios"
 import { toast } from "react-toastify"
 
-const baseUrl = "https://market-back.azurewebsites.net"
+const baseUrl = "https://chat-ai-server-mxss.onrender.com"
 
 // upload pdf to server
 export const uploadPdfToServer = async (file) => {
