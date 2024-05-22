@@ -1,0 +1,24 @@
+.chatMain {
+    height: 57vh;
+    padding: 50px 80px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    scrollbar-width: none;
+}
+
+.chatMain>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.chatMain::-webkit-scrollbar {
+    display: none;
+}
+
+.chatMain>p {
+    text-align: center;
+    color: #0FA958;
+}

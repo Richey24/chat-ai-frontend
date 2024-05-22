@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Chat from './components/Chat';
+import Input from './components/Input';
+import { useState } from 'react';
 
 function App() {
+
+  const [file, setFile] = useState(null)
+  const [messages, setMessages] = useState([])
+  const [load, setLoad] = useState(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setFile={setFile} file={file} />
+      <Chat messages={messages} load={load} />
+      <Input file={file} setMessages={setMessages} messages={messages} setLoad={setLoad} />
     </div>
   );
 }
