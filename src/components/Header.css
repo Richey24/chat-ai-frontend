@@ -49,6 +49,7 @@
 
     .mainHeader>div>div>p {
         width: 50px;
+        height: 30px;
         overflow: hidden;
     }
 }
