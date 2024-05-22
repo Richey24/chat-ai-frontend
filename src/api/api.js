@@ -13,11 +13,6 @@ export const uploadPdfToServer = async (file) => {
 // send question to server and return the server response
 export const askQuestions = async () => {
     const val = document.getElementById("message").value
-    if (val.length <= 0) {
-        toast.warning("Type in the input field")
-        return
-    }
-    console.log(val);
     const res = await axios.post(`${baseUrl}/query`, {
         question: val
     })
