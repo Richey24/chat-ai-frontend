@@ -27,5 +27,6 @@
 @media (max-width: 800px) {
     .chatMain {
         height: 56vh;
+        padding: 20px 10px;
     }
 }
