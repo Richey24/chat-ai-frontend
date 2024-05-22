@@ -7,6 +7,11 @@ const Input = ({ file, setMessages, messages, setLoad }) => {
 
     // this function add the user questions and the server response to the message array
     const getMessages = async () => {
+        const val = document.getElementById("message").value
+        if (val.length <= 0) {
+        toast.warning("Type in the input field")
+        return
+        }
         setLoad(true)
         const arr = [...messages]
         arr.push({
