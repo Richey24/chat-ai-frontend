@@ -33,3 +33,22 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+@media (max-width: 800px) {
+    .mainHeader>div>label>p {
+        display: none;
+    }
+
+    .mainHeader>div>label {
+        width: 50px;
+    }
+
+    .mainHeader {
+        padding: 20px;
+    }
+
+    .mainHeader>div>div>p {
+        width: 50px;
+        overflow: hidden;
+    }
+}

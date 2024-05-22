@@ -22,3 +22,10 @@
     text-align: center;
     color: #0FA958;
 }
+
+
+@media (max-width: 800px) {
+    .chatMain {
+        height: 67vh;
+    }
+}

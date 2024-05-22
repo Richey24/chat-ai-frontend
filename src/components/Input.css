@@ -41,3 +41,9 @@
 .enabled>input {
     background-color: white;
 }
+
+@media (max-width: 800px) {
+    .inputMain>input {
+        width: 75%;
+    }
+}
